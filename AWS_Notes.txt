@@ -1,0 +1,262 @@
+What is Cloud computing ?
+Cloud Computing is about using the cpu resources remotely, which we dont know the location of and hence the term cloud. 
+
+How AWS cloud is different from other cloud service providers ?
+AWS has a market share of 70 percent and it is a global leader in cloud computing.
+
+What is Pay As We Go model ?
+You can request the computing services for the number of minutes spent or used.
+
+How amazon's Aws becomes a career driven opportunity for the non- sponsored startups ?
+Now, non -sponsered startups have to not spend a lot of money to buy infrastructure and test their product, it gave them opportunity to rent the services and leave them if the product does not work.
+
+What is Compute as a service ? Give examples.
+It is the availabilty of the compute resources to get the jb done as a service , i.e. Amazon manages the infrastructure and we will just use the compute resource.
+I can launch the EC2 linux instance to develop and host my applications. If the requests increases/decreases, it will change.
+
+What is Availability Zones (AZ)?
+It is the collection of Datacenters
+
+What is latency and what is the way to reduce it ??
+It is the time delay happening or ecperieced by user. It can be reduced by many way and first and formost we should launch the compute istance from where the user access the application.
+
+
+What are Regions ?
+They are the area or space which are designed to seperate a group of resources from another group of resources.
+
+Why amazon launches more than one Zones inside every region ?
+To maintain high availability.
+This strategy ensures the high availabilty and less risk of loss of service.
+
+---------------------------------------------------------
+👉What is instances?
+Instances are Operating Sytem that have RAM and CPU
+
+👉Difference B/w Datacenter and availability zone?
+Avaiability Zones consists of Data center , there can be more than one data center in an avaiability Zone.
+
+👉What is sleep mode?
+Every component of the Operating System or laptop stops but the RAM processes are saved and it keeps on running.
+
+👉 What is console?
+Console is the screen or portal through which we interact with Operating System and pass on commands.
+
+👉 What is difference b/w window edition os and server edition os?
+Winows os is for multimedia purpose where you perform various user interactive processe.
+ however, server edition os is primarily for execution of processes with no GUI.  
+
+👉 How to increase CPU limit?
+We can do so by creating a ticket with AWS Support team and ask them to incrase CPU limit to 5 or more.
+
+👉 What is Hibernation mode?
+This is a new feature in AWS Linux OS version 2, where we all RAM processes can run in background while the instance is off.
+
+👉 Command to check all running process, uptime?
+ps -aux, uptime
+
+👉 What is ssh?
+SSH is is protocol to access remote linux server. It comes from openssh program.
+
+👉 How to connect to Linux instance via ssh?
+We can access it through Putty client,  user-name@ip-address and by using private key provided by AWS.
+
+👉 Format of key?
+AWS gives the format of key as .pem
+
+👉 Which format of key putty support?
+Putty uses the .ppk format. We can convert the same by putty-keygen 
+
+==========
+
+>> We learnt to create an Windows instance on AWS and access the same from our local computer through RDP protocol, which by default listens on port 3389.
+>> We use usernae and password to connect to Windows instance.
+>> We learnt about Security Group aka kind of {Security Guard} that controls the traffic reaching from internet to your instance based on various rules that is defined by you.
+>> We learnt the term provisioning of O.S is nothing but it is the starting of Operating System.
+>> There is Inbound/Ingress Rule traffic which is nothing but the traffic from ouside network coming in to your netwrok.
+>> Now, There are two IP'S i.e. Private and Public IP, associated with the Operating System.
+>> So, if you have to connect your Operating System over the internet , we use the Public IP and not the private IP.
+>> Now ssh protocol differss from the  ping in a way that ping uses the SNMP protocol and if SNMP is not allowed in security group, we cannot ping however we can do ssh as ssh rule is added to the security group.
+
+
+------------------
+
+[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A
+[A👉What is the Availability Zone?
+👉What are the regional services?
+👉What is RDP?
+👉Role of Aws security group in creating a user trusted cloud?
+👉How regional service sometimes a way to manage on AWS cloud ??
+👉How port no is a way to host the client on the AWS cloud?
+👉What are things the user is required to launch /provisioning the OS?
+👉How a user can connect to windows OS via RDP?
+👉Why key is used in Linux is and password for windows?
+👉What are the main things you require to connect through RDP?
+👉Why it is need to have a private key to provide a window server?
+👉 Do putty support .pem format private key?
+👉What are security groups?
+👉Role of security group?
+👉How to create inbound rules ? 
+[B[B[B[B[B
+
+>> We learnt to create an Windows instance on AWS and access the same from our local computer through RDP protocol, which by default listens on port 3389.
+>> We use usernae and password to connect to Windows instance.
+>> We learnt about Security Group aka kind of {Security Guard} that controls the traffic reaching from internet to your instance based on various rules that is defined by you.
+>> We learnt the term provisioning of O.S is nothing but it is the starting of Operating System.
+>> There is Inbound/Ingress Rule traffic which is nothing but the traffic from ouside network coming in to your netwrok.
+>> Now, There are two IP'S i.e. Private and Public IP, associated with the Operating System.
+>> So, if you have to connect your Operating System over the internet , we use the Public IP and not the private IP.
+>> Now ssh protocol differss from the  ping in a way that ping uses the SNMP protocol and if SNMP is not allowed in security group, we cannot ping however we can do ssh as ssh rule is added to the security group.
+>> We will learn about NACL ,ICMP in detail in next session.
+
+
+-------------
+
+👉 What is Bucket and Object?
+>> Object is like a file containing any data and Bucket is equal to a folder which contains a file.
+
+
+👉How to use S3 Services?
+>> To use s3 service you can select Services > S3 > Create bucket > select unique name for the bucket > enter the bucket > select on Upload.  
+
+
+👉What is IAM ?
+>> IAM is Identity Access Management which is a management tool, by which we can control access and authority on the services offered by AWS.
+
+👉How to login with IAM user?
+>> while logging in instead of selecting root user you have to select IAM user.
+
+👉What is serverless?
+>> Serverless means that servers are managed for us.
+
+👉what is format of object url?
+>> formant of object url is https://<bucketname>.S3.amazonaws.com/<objectname>
+
+👉What is EBS?
+>> EBS (Elastic Block Storage) is a service offered by AWS which gives us block storages.
+
+👉How to store data in s3?
+>> Go to service > select S3 > to use S3 you have to create Bucket > store you desired files in the bucket by selecting upload in Bucket
+
+👉How to share files to public via s3 ?
+>> a. go to your bucket and go to permissions > disable (Block Public Access)
+ go to your Object > Permissions > Public Access > Everyone > select Read Object and preferred Object's ACL.
+and share the url.
+
+
+👉What is the difference between EBS and S3 storage
+EBS can only be used by one EC2 instance at a time while S3 can be used by multiple instances
+
+-------------
+
+👉What are the main 3 ways to access AWS?
+The 3 ways to access AWS is through AWS CLI, through programme by SDK, and through GUI.
+
+👉 What is AWS CLI?
+AWS CLI is AWS Command line interface which enables us to interact and pass in commands for aws services through command line. This enables us to perform automation i.e. write scripts to perform number of tasks in a certain ways in less time. 
+
+👉How to install AWS CLI?
+AWS CLI software/program is free and AWS provides this software for free for all the three OS, i.e. windows , linux and mac. 
+1. We can download the installer AWS CLI version 2,
+2. Then follow along the steps of installer.	
+
+👉What is the use of AWS configure?
+AWS Configure will configure the AWS CLI to authenticate it to perform tasks with AWS services by using the Access KEY( username ) and Secret key ( password )
+
+👉What is the use of aws –version command?
+AWS --version will let us know what version of CLI is installed in your operating system. 
+>aws --version
+aws-cli/2.0.50 Python/3.7.7 Windows/10 exe/AMD64
+
+👉What is the default output format when we use aws cli?
+The default output  format is JASON
+
+👉How can we start aws ec2 instances using AWS CLI?
+" aws ec2 start-instances --instance ids <> "
+👉What is Synopsis?
+It is the pre-defined syntax given by the AWS to use AWS services via CLI
+
+👉What are the required parameters for creating and launching instances using AWS CLI?
+Parameters required are as follows :-
+1. ami name i.e. ami id
+2. instance-type
+3. subnet-id
+4. security-group
+5. keyname
+
+👉What are the constraints of Power User?
+Power user is a privilaged user access which has rights to amend all the services apart from User services and Billing services.
+
+================
+
+👉 How to deploy Apache Web server on AWS cloud ?
+We configure apache httpd web server by installing httpd. starting the service and then deploying program on /var/www/html/
+
+👉 What is meant by document root in Apache Web server ?
+Root directory where the website related files and webpages are saved by default, whhich is    (/var/www/html).
+
+👉 What is vi ? How to save file in vi ?
+vi is text editor for linux, which can be used to edit documents. press ESC and :wq! or  :x!
+
+👉 Why we never want our code+data to be stored on root device in EC2 instance ?
+if the instance corrupted forany reason we will loose our date+code.hence its a bad practice to store code+data in root device.
+
+👉 How to create an EBS volume & mount it ?
+ click Create Volume and  we need to attach it to instance for mounting.
+ 1. decide the storage
+ 2. format
+ 3. mount
+
+👉 What o/p do you expect on running the command "df -h" ?
+Avaiable free space information
+
+👉 What is the difference between EBS & S3 ?
+S3 is object storage while EBS is a block storage.S3 has unlimited storage service.
+
+👉 What is winscp ? What protocol it works on ?
+winscp is tool to transfer file from source window to target linux machine or vice-versa.
+
+👉 Why we prefer to put images & other static data in S3 & the code in EBS ?
+Its good practise to put images and other static data in S3 as  is more durable compared to EBS.
+
+👉 What is Cloud front in AWS ? Why is it used ?
+Cloud front is content delivery network as a service from AWS, used to reduce the latency for the end users.
+
+👉 What is CDN ?
+Content Delivery Network is distribution data across geographical locations which is used to deliver  content in less time to end user. This decreases load on root server and also decreses the latency.
+
+👉 What do you mean by Edge locations ?
+Edges locationis is like point of presence and is like Small Dtacentre which is the CDN service in AWS.
+
+=========================
+
+
+>> AWS Edge locations stores caches from main datacenters, edge locations are smaller datacenters  which are used to provide higher speed to client for that they sotres caches of main content/data , data has a limited time (TTL).
+
+>> Cloud Front is a service provided by AWS cloud front generates a link that can locate a near-by datacenter of a client. for example if my main server in mumbai and my client is in us so, CF provide a near-by datacenter in US to that client and stores the caches from main DC(mumbai) to the client's near-by DC. This is the use of cloud Front.
+
+>> We do not have a storage facility in cloud front , CF useses edge location to stores caches and edge location are only used by AWS itself they are not for client/users.
+
+>> TTL(time to live) TTL is the by-default featurs in edge locations , Where how much time a cache can be their in edge loction DC. yes, it is tunable and we can set the time in TTL ,the default value of TTL is 1 day(86,400 seconds).
+
+>> RTMP is (Real time messaging protocol) is used for Audio video streaming by AWS CloudFront, it uses Adobe flash player. Majority of browsers will stop providing compatibility for flash player in 2020 end hence  after that CloudFront will no longer be supporting RTMP. 
+
+>> Follow below steps to Configure CloudFront
+	1.	Go to Service
+	2.	Networking and content delivery
+	3.	Cloud front 
+	4.	Create distributions
+	5.	In Origin Domain put the s3 bucket name.
+	6.	create/done.
+
+>> Cache miss is a situation when client/user hit 1st time to the website and CF provides local datacenter to it. hence  in local datacenter 1st time the data is not available, i.e. it will internally connect to main datacenters where main files are kept aftre which it will copy data from their and create cache and provide to users the 1st time hit.
+
+>> We can get cache statistics by going to  Reports and Analytincs > cache Statistics. It provides cache misss and cache hit informations.
+
+>> Geo Restrictions in AWS CF are used to block the users from multiple countries like access web sites or not. It uses whitelist and balcklist ,if we want only users from india then, in that case what we can do is that we put all others countries in blacklist or we can do is put only India in WhiteList so, that it will only accessable to Indian users.
+
+>> If their is a quick change in static content then we have to clear the caches from all the avl Edge locations. Hence, to remove cahes use Invalidation option for all use*/ for one particular use /file name.
+
+====================
+
+
+
